@@ -198,7 +198,7 @@
 
 /**------------DESKTOP-------------- */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
     }
