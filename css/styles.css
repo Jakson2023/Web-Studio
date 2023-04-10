@@ -57,10 +57,20 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
 }
 
 /**-------------mob-menu-----------------  */
 
+
+.icon-open-menu {
+  fill: var(--color-navy-blue);
+}
+
+.open-btn-menu {
+  border: none;
+  background: transparent;
+}
 
 .mob-menu {
   position: fixed;
@@ -73,9 +83,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 
 .close-btn-menu {
@@ -86,12 +95,15 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(46, 47, 66, 0.1);
   background: rgba(231, 233, 252, 0.1);
-  font-size: 13.3333px;
+  font-size: 13px;
 }
 
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
-
-.icon-close-menu {}
 
 .mob-menu-list {
   margin-top: 32px;
@@ -102,10 +114,7 @@ img {
 }
 
 
-
-
 .mob-menu-link {
-
   font-weight: 700;
   font-size: 36px;
   text-decoration: none;
@@ -122,7 +131,6 @@ img {
   color: var(--color-ocean);
 }
 
-.soc-contacts-wrap {}
 
 .address-list-mob {
   margin-bottom: 48px;
@@ -138,8 +146,6 @@ img {
 }
 
 .contacts-mob {
-
-
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
@@ -155,7 +161,6 @@ img {
 .soc-list-mob {
   display: flex;
   justify-content: space-between;
-
 }
 
 .mob-soc-item {
@@ -181,9 +186,10 @@ img {
 
 
 
-
-
 /**----------Logo-------- */
+
+
+
 
 .logo-top {
   text-decoration: none;
@@ -219,21 +225,6 @@ img {
 }
 
 /**----------Button------ */
-
-
-.icon-open-menu {
-
-  stroke: var(--color-navy-blue);
-
-}
-
-.open-btn-menu {
-
-  border: none;
-  background: inherit;
-}
-
-
 
 
 .button-studio {
@@ -325,22 +316,16 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  bottom: -1px;
+
 }
 
 .active-page.portfolio-page::after {
   background-image: url(../images/hover.svg);
-
 }
 
 .active-page.studio-page::after {
   background-image: url(../images/hover-studio.svg);
-
 }
-
-
-
-.navigation-list {}
 
 .contacts:hover,
 .contacts:focus {
@@ -357,7 +342,7 @@ img {
   transition: color var(--animation-hover-transition);
 }
 
-.address-list {}
+
 
 /**------------Containers------------ */
 
@@ -368,13 +353,10 @@ img {
   margin: 0 auto;
 }
 
-.feature-container {}
 
 .feature-container>.feature {
-
   margin-bottom: 72px;
 }
-
 
 
 .section {
@@ -399,9 +381,7 @@ img {
 }
 
 .img-studio-list {
-
   margin-top: 72px;
-
 }
 
 .card-portfolio {
@@ -428,7 +408,6 @@ img {
 
 
 .overlay {
-
   position: absolute;
   top: 0;
   left: 0;
@@ -462,15 +441,11 @@ img {
 .link-portfolio:hover,
 .link-portfolio:focus {
   box-shadow: var(--shadow-card);
-
 }
 
 
-
 .card-team {
-
   margin-top: 72px;
-
 }
 
 .card-text {
@@ -478,13 +453,11 @@ img {
   border-bottom: 1px solid var(--color-cornflower);
   border-left: 1px solid var(--color-cornflower);
   border-right: 1px solid var(--color-cornflower);
-
 }
 
 /**----------hero----------------- */
 
 .hero {
-
   background-color: var(--color-navy-blue);
   background-image: var(--gradient-hero-grey), url(../images/mob-bg.jpg);
   background-repeat: no-repeat;
@@ -517,7 +490,6 @@ img {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-
   text-transform: capitalize;
 }
 
@@ -579,8 +551,6 @@ img {
   background-color: var(--color-ocean);
 }
 
-
-
 /**------card text-------- */
 
 .card-team-text {
@@ -589,7 +559,6 @@ img {
 
 
 .main-item {
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -685,7 +654,6 @@ a.customers-link:focus {
 }
 
 .footer {
-
   background-color: var(--color-navy-blue);
   padding-top: 96px;
   padding-bottom: 96px;
@@ -755,7 +723,6 @@ a.customers-link:focus {
 }
 
 .subscribe-form {
-
   margin-top: 16px;
 }
 
@@ -888,14 +855,9 @@ a.customers-link:focus {
   width: 24px;
   background: var(--color-cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
-
-
-
-
   justify-content: center;
   align-items: center;
   transition: border var(--animation-hover-transition), background-color var(--animation-hover-transition), fill var(--animation-hover-transition);
-
 }
 
 .close-modal:hover,
@@ -960,7 +922,6 @@ a.customers-link:focus {
 
 .input-line {
   width: 100%;
-
   outline: 1px solid rgba(46, 47, 66, 0.2);
   border: none;
   border-radius: 4px;
