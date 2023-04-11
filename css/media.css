@@ -1,6 +1,13 @@
 /**-------MOBILE---------- */
 
+@media screen and (min-width: 425px) {
+    .contacts-mob-tel {
+        font-size: 36px;
+    }
 
+
+
+}
 
 @media screen and (min-width: 428px) {
 
@@ -9,9 +16,24 @@
         max-width: 428px;
     }
 
-    .soc-list-mob {
-        margin-right: 28px;
+
+    .hero {
+        background-image: var(--gradient-hero-grey), url(../images/tab-bg.jpg);
     }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--gradient-hero-grey), url(../images/tab-bg-2x.jpg);
+        }
+    }
+
+
+
+
 
     .input-subscribe {
         width: 396px;
@@ -53,6 +75,38 @@
         margin-left: 76px;
     }
 
+    .contacts {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--color-slate);
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    .hero {
+        max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: var(--gradient-hero-grey), url(../images/desc-bg.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: var(--gradient-hero-grey), url(../images/desc-bg-x2.jpg);
+        }
+    }
+
+
+
+
+
+
+
     .button-studio {
         margin-top: 36px;
     }
@@ -65,19 +119,9 @@
         display: none;
     }
 
-    .hero {
-        background-image: var(--gradient-hero-grey), url(../images/tab-bg.jpg);
-    }
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: var(--gradient-hero-grey), url(../images/tab-bg-2x.jpg);
-        }
-    }
+
+
 
 
     .feature-container {
@@ -89,15 +133,26 @@
 
     .feature-container>.feature {
         flex-basis: calc((100% - 24px) / 2);
+
     }
+
+
+    .feature:not(:last-child) {
+        margin-bottom: unset;
+    }
+
 
     .customers-list {
 
         gap: 72px 24px;
         width: 552px;
-        margin-left: auto;
-        margin-right: auto;
 
+
+    }
+
+
+    .container.container-customers {
+        max-width: 582px;
     }
 
     .customers-list-item {
@@ -111,6 +166,11 @@
         row-gap: 12px;
     }
 
+
+    .container.team-container {
+        max-width: 582px;
+    }
+
     .card-team {
 
         display: flex;
@@ -118,6 +178,10 @@
         gap: 24px;
         justify-content: center;
         row-gap: 64px;
+    }
+
+    .member-card:not(:last-child) {
+        margin-bottom: unset;
     }
 
     .main-title {
@@ -159,9 +223,7 @@
         text-align: unset;
     }
 
-    .footer-logo {
-        margin-left: 106px;
-    }
+    .footer-logo {}
 
     .logo-bottom {
         text-align: unset;
@@ -170,7 +232,7 @@
 
     .subscribe-wrap {
         margin-top: 0px;
-        margin-left: 106px;
+
     }
 
     .footer-social {
@@ -187,6 +249,7 @@
         flex-wrap: wrap;
         gap: 24px;
         row-gap: 72px;
+        max-width: 582px;
     }
 
     .modal {
@@ -200,6 +263,10 @@
 
 @media screen and (min-width: 1158px) {
     .container {
+        max-width: 1158px;
+    }
+
+    .container.team-container {
         max-width: 1158px;
     }
 
@@ -224,26 +291,22 @@
         flex-direction: unset;
     }
 
+    .contacts {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        transition: color var(--animation-hover-transition);
+    }
+
+
+
+
+
     .button-studio {
         margin-top: 48px;
     }
 
-    .hero {
-        max-width: 1440px;
-        padding-top: 188px;
-        padding-bottom: 188px;
-        background-image: var(--gradient-hero-grey), url(../images/desc-bg.jpg);
-    }
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-            background-image: var(--gradient-hero-grey), url(../images/desc-bg-x2.jpg);
-        }
-    }
 
     .img-studio-list {
         display: flex;
@@ -294,6 +357,11 @@
     .customers-section {
         padding-top: 120px;
         padding-bottom: 119px;
+    }
+
+
+    .container.container-customers {
+        max-width: 1158px;
     }
 
     .footer-soc-list {

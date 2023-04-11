@@ -46,41 +46,43 @@
     <!-- *----------mob-menu---------------- -->
 
     <div class="mob-menu is-hidden" data-menu>
-      <div>
-        <button type="button" class="close-btn-menu" data-menu-close><svg width="8" height="8" class="icon-close-menu">
-            <use href="./images/icons.svg#icon-close-cross"></use>
-          </svg></button>
-        <ul class="mob-menu-list">
-          <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link">Studio</a></li>
-          <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link">Portfolio</a></li>
-          <li class="mob-menu-item"><a href="" class="mob-menu-link">Contacts</a></li>
-        </ul>
+      <div class="mob-menu-wrap">
+        <div>
+          <button type="button" class="close-btn-menu" data-menu-close><svg width="8" height="8"
+              class="icon-close-menu">
+              <use href="./images/icons.svg#icon-close-cross"></use>
+            </svg></button>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link link-page">Studio</a></li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link">Portfolio</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link ">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="soc-contacts-wrap">
+          <ul class="address-list-mob">
+            <li class="address-list-item"><a href="tel:+110001111111" class="contacts-mob-tel"> +11 (000) 111-11-11 </a>
+            </li>
+            <li class="address-list-item"><a href="mailto:info@devstudio.com" class="contacts-mob"> info@devstudio.com
+              </a></li>
+
+          </ul>
+
+          <ul class="soc-list-mob">
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"> <svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg></a></li>
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg></a></li>
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg></a></li>
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="soc-contacts-wrap">
-        <ul class="address-list-mob">
-          <li class="address-list-item"><a href="tel:+110001111111" class="contacts-mob-tel"> +11 (000) 111-11-11 </a>
-          </li>
-          <li class="address-list-item"><a href="mailto:info@devstudio.com" class="contacts-mob"> info@devstudio.com
-            </a></li>
-
-        </ul>
-
-        <ul class="soc-list-mob">
-          <li class="mob-soc-item "><a href="" class="mob-soc-link"> <svg width="24" height="24" class="mob-soc-icon">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg></a></li>
-          <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg></a></li>
-          <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg></a></li>
-          <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg></a></li>
-        </ul>
-      </div>
-
 
     </div>
   </header>
@@ -162,10 +164,10 @@
     </section>
 
     <section class="main-team">
-      <div class="container">
+      <div class="container team-container">
         <h2 class="main-subtitle">Our Team</h2>
         <ul class="card-team">
-          <li class="main-list-team">
+          <li class="main-list-team  member-card">
             <img srcset="./images/mark.jpg 1x, ./images/mark2x.jpg 2x" src="./images/mark.jpg" alt="Mark Guerrero"
               width="264" />
             <div class="card-team-text">
@@ -191,7 +193,7 @@
               </ul>
             </div>
           </li>
-          <li class="main-list-team">
+          <li class="main-list-team member-card">
             <img srcset="./images/tom.jpg 1x, ./images/tom2x.jpg 2x" src="./images/tom.jpg" alt="Tom Ford"
               width="264" />
             <div class="card-team-text">
@@ -217,7 +219,7 @@
               </ul>
             </div>
           </li>
-          <li class="main-list-team">
+          <li class="main-list-team member-card">
             <img srcset="./images/camila.jpg 1x, ./images/camila2x.jpg 2x" src="./images/camila.jpg" alt="Camila Garcia"
               width="264" />
             <div class="card-team-text">
@@ -243,7 +245,7 @@
               </ul>
             </div>
           </li>
-          <li class="main-list-team">
+          <li class="main-list-team member-card">
             <img srcset="./images/daniel.jpg 1x, ./images/daniel2x.jpg 2x" src="./images/daniel.jpg" alt="Daniel Wilson"
               width="264" />
             <div class="card-team-text">
@@ -273,7 +275,7 @@
       </div>
     </section>
     <section class="customers-section">
-      <div class="container">
+      <div class="container container-customers">
         <h3 class="main-subtitle">customers</h3>
         <ul class="customers-list list">
           <li class="customers-list-item"><a href="" class="customers-link"><svg width="104" height="56"
