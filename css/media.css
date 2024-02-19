@@ -4,6 +4,7 @@
     .contacts-mob-tel {
         font-size: 36px;
     }
+    
 
 }
 
@@ -35,6 +36,47 @@
         width: 396px;
         height: 586px;
     }
+    .button-portfolio-list {
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+        margin-bottom: 72px;
+        flex-wrap: wrap;
+      }
+      .section-portfolio {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+
+      .card-item:not(:last-child) {
+        height: 400px;
+        margin-bottom: 48px;
+       
+        
+      }
+      .card-portfolio {
+        
+      }
+      .card-overlay {
+        position: relative;
+        overflow: hidden;
+        height: 280px;
+        width: 396px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .main-item {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.11;
+        text-align: left;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--color-navy-blue);
+      }
 
 }
 

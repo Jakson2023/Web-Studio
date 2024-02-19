@@ -14,13 +14,14 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/media.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container header-container">
       <nav class="nav-list">
-        <a href="./index.html" class="logo">WEB<span class="logo-item-top">STUDIO</span> </a>
+        <a href="./index.html" class="logo-top">WEB<span class="logo-item-top">STUDIO</span> </a>
         <ul class="navigation-list">
           <li><a href="./index.html" class="navigation ">Studio</a></li>
           <li class="active-page portfolio-page"><a href="./portfolio.html"
@@ -34,7 +35,53 @@
           <li><a href="tel:+110001111111" class="contacts"> +11 (000) 111-11-11 </a></li>
         </ul>
       </address>
+      <button type="button" class="open-btn-menu" data-menu-open><svg width="32" height="22" class="icon-open-menu">
+        <use href="./images/icons.svg#icon-men-burger"></use>
+      </svg></button>
     </div>
+
+
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu-wrap">
+        <div>
+          <button type="button" class="close-btn-menu" data-menu-close><svg width="8" height="8"
+              class="icon-close-menu">
+              <use href="./images/icons.svg#icon-close-cross"></use>
+            </svg></button>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link link-page">Studio</a></li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link">Portfolio</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link ">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="soc-contacts-wrap">
+          <ul class="address-list-mob">
+            <li class="address-list-item"><a href="tel:+110001111111" class="contacts-mob-tel"> +11 (000) 111-11-11 </a>
+            </li>
+            <li class="address-list-item"><a href="mailto:info@devstudio.com" class="contacts-mob"> info@devstudio.com
+              </a></li>
+
+          </ul>
+
+          <ul class="soc-list-mob">
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"> <svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg></a></li>
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg></a></li>
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg></a></li>
+            <li class="mob-soc-item "><a href="" class="mob-soc-link"><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
   </header>
   <main>
     <!-- Filters -->
@@ -234,6 +281,64 @@
     </div>
   </footer>
 
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-modal" data-modal-close><svg width="8" height="8">
+          <use href="./images/icons.svg#icon-close-cross"></use>
+        </svg></button>
+
+      <p class="modal-title">Leave your contacts and we will call you back </p>
+      <form class="modal-form">
+        <div class="input-field">
+          <label for="user-name">Name</label>
+          <div class="input-wrap">
+            <input type="text" name="user" id="user-name" class="input-line user-field">
+            <svg class="icon-user name" width="18" height="18">
+              <use href="./images/icons.svg#icon-input-persone"></use>
+            </svg>
+          </div>
+
+
+          <label for="user-phone">Phone</label>
+          <div class="input-wrap">
+            <input type="tel" name="phone-number" id="user-phone" class="input-line user-field">
+            <svg class="icon-user phone" width="18" height="24">
+              <use href="./images/icons.svg#icon-input-phone"></use>
+            </svg>
+          </div>
+
+
+          <label for="user-email">Email</label>
+          <div class="input-wrap">
+            <input type="email" name="email" id="user-email" class="input-line user-field">
+            <svg class="icon-user email" width="18" height="24">
+              <use href="./images/icons.svg#icon-input-email"></use>
+            </svg>
+          </div>
+
+
+          <label for="comment">Comment</label>
+          <textarea name="comment" id="comment" placeholder="Text input" class="input-line comment-field"></textarea>
+        </div>
+
+
+
+        <input type="checkbox" id="policy" name="policy" value="true" class="input-chekbox">
+        <label for="policy" class="label-policy">
+          <span class="icon-checkbox">
+            <svg width="10px" height="8px" class="icon-ok-policy">
+              <use href="./images/icons.svg#icon-ok"></use>
+            </svg>
+          </span>I accept the terms and conditions of the <a href="#" class="privacy-policy-link"> Privacy
+            Policy</a>
+        </label>
+        <button type="submit" class="button-modal-submit">Send</button>
+
+      </form>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -392,27 +392,27 @@ img {
   margin-top: 72px;
 }
 
-.card-portfolio {
+/* .card-portfolio {
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: -24px;
   margin-top: -48px;
-}
+} */
 
-.card-portfolio>.card-item {
+/* .card-portfolio>.card-item {
   flex-basis: calc(100% / 3 - 24px);
   margin-left: 24px;
   margin-top: 48px;
-}
+} */
 
 /**------------overlay--------  */
 
-.card-overlay {
+/* .card-overlay {
   position: relative;
   overflow: hidden;
-}
+} */
 
 
 .overlay {
