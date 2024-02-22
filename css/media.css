@@ -4,7 +4,7 @@
     .contacts-mob-tel {
         font-size: 36px;
     }
-    
+
 
 }
 
@@ -36,47 +36,22 @@
         width: 396px;
         height: 586px;
     }
+
     .button-portfolio-list {
-        display: flex;
         justify-content: flex-start;
         gap: 24px;
         margin-bottom: 72px;
-        flex-wrap: wrap;
-      }
-      .section-portfolio {
+    }
+
+    .section-portfolio {
         padding-top: 48px;
         padding-bottom: 48px;
-      }
+    }
 
-      .card-item:not(:last-child) {
+    .card-item:not(:last-child) {
         height: 400px;
         margin-bottom: 48px;
-       
-        
-      }
-      .card-portfolio {
-        
-      }
-      .card-overlay {
-        position: relative;
-        overflow: hidden;
-        height: 280px;
-        width: 396px;
-      }
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-      .main-item {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.11;
-        text-align: left;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--color-navy-blue);
-      }
+    }
 
 }
 
@@ -109,6 +84,36 @@
         margin-left: 76px;
     }
 
+    .button-portfolio-list {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    .card-overlay {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+        width: 356px
+    }
+
+    .card-portfolio {
+        column-gap: 24px;
+        row-gap: 72px;
+        justify-content: unset;
+    }
+
+    .card-item:not(:last-child) {
+        height: 420px;
+        margin-bottom: 0;
+
+    }
+
+    .card-item:last-child {
+        margin-bottom: 48px;
+    }
+
+
+
     .contacts {
         font-size: 12px;
         line-height: 1.17;
@@ -120,8 +125,6 @@
 
     .hero {
         max-width: 1440px;
-        /* padding-top: 188px;
-        padding-bottom: 188px; */
         background-image: var(--gradient-hero-grey), url(../images/desc-bg.jpg);
     }
 
@@ -156,14 +159,11 @@
 
     .feature-container>.feature {
         flex-basis: calc((100% - 24px) / 2);
-
     }
-
 
     .feature:not(:last-child) {
         margin-bottom: unset;
     }
-
 
     .customers-list {
         gap: 72px 24px;
@@ -190,7 +190,6 @@
     }
 
     .card-team {
-
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
@@ -403,6 +402,15 @@
     .modal {
         top: 50%;
         height: 584px;
+    }
+
+
+    .card-overlay {
+        width: 360px
+    }
+
+    .card-portfolio {
+        row-gap: 48px;
     }
 
 }
